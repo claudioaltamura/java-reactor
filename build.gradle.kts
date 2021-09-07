@@ -7,8 +7,7 @@
  */
 
 plugins {
-    // Apply the java-library plugin for API and implementation separation.
-    `java-library`
+    java
 }
 
 repositories {
@@ -21,13 +20,13 @@ dependencies {
 
     implementation("ch.qos.logback:logback-classic:1.2.5")
 
-    testImplementation("org.assertj:assertj-core:3.19.0")
+    testImplementation("org.assertj:assertj-core:3.20.2")
 
     // Use JUnit Jupiter API for testing.
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
 
     // Use JUnit Jupiter Engine for testing.
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
 }
 
 tasks.test {
