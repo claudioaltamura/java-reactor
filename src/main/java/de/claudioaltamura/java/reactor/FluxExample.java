@@ -8,4 +8,12 @@ public class FluxExample {
 		return Flux.just(1,2,3,4);
 	}
 
+	Flux<Integer> mappedFlux() {
+
+		return Flux.just(1, 2, 3, 4)
+				.log()
+				.map(i -> i * 2);
+
+	}
+
 }

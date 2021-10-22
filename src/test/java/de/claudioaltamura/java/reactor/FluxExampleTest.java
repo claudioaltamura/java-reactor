@@ -20,4 +20,16 @@ class FluxExampleTest {
 		assertThat(elements).containsExactly(1,2,3,4);
 	}
 
+	@Test
+	void mappedFlux() {
+		FluxExample example = new FluxExample();
+
+		List<Integer> elements = new ArrayList<>();
+
+		example.mappedFlux().log().subscribe(elements::add);
+
+		assertThat(elements).containsExactly(2,4,6,8);
+
+	}
+
 }
