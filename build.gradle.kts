@@ -1,6 +1,6 @@
 plugins {
     java
-    id("com.diffplug.spotless") version "6.5.0"
+    id("com.diffplug.spotless") version "6.5.2"
     id("com.github.ben-manes.versions") version "0.42.0"
 }
 
@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    implementation("io.projectreactor:reactor-core:3.4.17")
+    implementation("io.projectreactor:reactor-core:3.4.18")
 
     implementation("ch.qos.logback:logback-classic:1.2.5")
 
